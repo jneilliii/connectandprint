@@ -44,17 +44,17 @@ class ConnectAndPrintPlugin(octoprint.plugin.EventHandlerPlugin,
             connectandprint=dict(
                 displayName=self._plugin_name,
                 displayVersion=self._plugin_version,
-                type="github_release",
+                type="github_commit",
                 user="jneilliii",
                 repo="connectandprint",
-                url="https://raw.githubusercontent.com/jneilliii/connectandprint/{target_version}/connectandprint.py",
+                url="https://gist.githubusercontent.com/jneilliii/19a9550155838dfa741f2d30e21c21a8/raw/connectandprint.py",
                 method="single_file_plugin"
             )
         )
 
 __plugin_name__ = "Connect And Print"
 __plugin_pythoncompat__ = ">=2.7,<4"
-__plugin_version__ = "1.1.4"
+__plugin_version__ = "1.1.5"
 __plugin_description__='Automatically connect to your printer on file upload and start printing'
 __plugin_author__="Max Grallinger"
 __plugin_url__="https://github.com/Maxinger15/connectandprint"
