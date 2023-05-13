@@ -45,6 +45,8 @@ class ConnectAndPrintPlugin(octoprint.plugin.EventHandlerPlugin,
                 displayName=self._plugin_name,
                 displayVersion=self._plugin_version,
                 type="github_release",
+                user="jneilliii",
+                repo="connectandprint",
                 url="https://raw.githubusercontent.com/jneilliii/connectandprint/master/connectandprint.py",
                 method="single_file_plugin"
             )
